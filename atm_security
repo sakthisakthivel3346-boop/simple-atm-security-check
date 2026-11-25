@@ -1,0 +1,50 @@
+def check_pin(entered_pin):
+    if entered_pin == 2004:
+        return True
+    else:
+        return False
+
+
+def bank_action(action_type, entered_pin):
+    result = check_pin(entered_pin)
+
+    if result == True:
+        if action_type == "balance":
+            print("Your balance is Rs.5000")
+        elif action_type == "withdraw":
+            print("Withdrawal successful")
+        else:
+            print("Invalid action")
+    else:
+        print("Incorrect PIN, access denied.")
+
+
+# Main Program
+pin = int(input("Enter your ATM PIN: "))
+action = input("Enter action (balance/withdraw): ")
+
+bank_action(action, pin)
+
+# -----------------------------------------------------------
+
+def check_pin(enter_pin):
+    if enter_pin == 2004:
+        return True
+    else:
+        return False
+
+def bank_action(action_type, enter_pin):
+    result = check_pin(enter_pin)
+
+    if result == True:
+        if action_type == "balance":
+            print("your balance is 5000")
+        else:
+            print("invalid action")
+    else:
+        print("Incorrect PIN, access denied.")
+
+pin = int(input("enter your ATM PIN: "))
+action = input("enter action(balance/withdraw): ")
+
+bank_action(action,pin)
